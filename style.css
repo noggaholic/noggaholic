@@ -1,0 +1,222 @@
+body {
+  /* Location of the image */
+  background-image: url(background.jpg);
+
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+
+  /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+html, body, .container {
+  height: 100%;
+}
+
+/* Reset */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Basic */
+body {
+  font: 18px/23px "Lato", sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.ui {
+  position: absolute;
+  bottom: -344px;
+  left: 10%;
+  animation: animUI  0.5s normal forwards;
+}
+
+.ui.out {
+   animation-name: out;
+   animation-duration: 0.5s;
+
+}
+.ui.over {
+   animation: in  0.5s normal forwards;
+}
+
+@keyframes in {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(-200px);
+    }
+}
+
+@keyframes out {
+    from {
+      transform: translateY(-200px);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+}
+
+@keyframes animUI {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.twitter {
+  color: #1dcaff;
+  text-shadow: none;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+/* Special */
+.sub-title {
+  margin: 50px auto;
+  font-size: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.sub-title span {
+  font-size: 18px;
+  line-height: 1px;
+  text-transform: initial;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #cafaea;
+  border: 1px solid #cafaea;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 967px) {
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  .sub-title span {
+    font-size: 17px;
+    line-height: 1px;
+    text-transform: capitalize;
+  }
+}
+
+.newsletter {
+  overflow: hidden;
+  height: 63px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+}
+.newsletter input {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 0 10px 15px;
+  text-transform: uppercase;
+  outline: none;
+  -moz-transition: border 0.2s ease;
+  -o-transition: border 0.2s ease;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+}
+.newsletter input:focus {
+  border: 1px solid #999;
+}
+.newsletter input:focus + button {
+  background-color: #000;
+}
+.newsletter button {
+  position: absolute;
+  z-index: 999;
+  right: 2px;
+  top: 2px;
+  height: 58px;
+  border: none;
+  background-color: #3d515c;
+  -moz-transition: background-color 0.3s ease, width 0.3s ease;
+  -o-transition: background-color 0.3s ease, width 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, width 0.3s ease;
+  transition: background-color 0.3s ease, width 0.3s ease;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-transform: uppercase;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  @inlude transform(translateZ(0));
+}
+.newsletter button:hover {
+  width: 140px;
+}

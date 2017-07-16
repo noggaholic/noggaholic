@@ -1,10 +1,57 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-hello world!
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bugcraft Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="The ultimate Machinima tool">
+  <link rel="icon" href="" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stars.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(() => {
+      $(".ui").hover(
+          function () {
+              $(this).removeClass('out').addClass('over');
+          },
+          function () {
+              $(this).removeClass('over').addClass('out');
+          }
+      );
+    });
+  </script>
+</head>
+<body>
+  <img src="UI.png" alt="" class="ui">
+  <header class="container">
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section class="content">
+      <h1>Bugcraft Studio</h1>
+      <p class="sub-title">
+        <strong>The ultimate Machinima tool</strong> <br />
+        <span>All World of Warcraft versions supported<br />From Alpha 0.5.x to Legion 7.x</span>
+      </p>
+      <p>
+        <form class='newsletter'>
+          <input placeholder='E-mail address' type='text'>
+          <button>Subscribe!</button>
+        </form>
+      </p>
+      <p>
+        <a href="http://www.twitter.com/k4rliky" target="_blank" class="twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+      </p>
+    </section>
+  </header>
+</body>
 </html>
