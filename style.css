@@ -85,11 +85,11 @@ strong {
 
 /* Special */
 .sub-title {
-  margin: 50px auto;
+  margin: 30px auto;
   font-size: 35px;
   line-height: 35px;
   text-transform: uppercase;
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .sub-title span {
