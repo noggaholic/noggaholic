@@ -39,6 +39,7 @@ html, body, h1, p, a, div, section {
 body {
   font: 18px/23px "Lato", sans-serif;
   color: #ffffff;
+  overflow: hidden;
 }
 
 h1 {
