@@ -51,49 +51,6 @@ h1 {
   margin-top: 20px;
 }
 
-.ui {
-  position: absolute;
-  bottom: -344px;
-  left: 10%;
-  animation: animUI  0.5s normal forwards;
-}
-
-.ui.out {
-   animation-name: out;
-   animation-duration: 0.5s;
-
-}
-.ui.over {
-   animation: in  0.5s normal forwards;
-}
-
-@keyframes in {
-    from {
-      transform: translateY(-50px);
-    }
-    to {
-      transform: translateY(-200px);
-    }
-}
-
-@keyframes out {
-    from {
-      transform: translateY(-200px);
-    }
-    to {
-      transform: translateY(-50px);
-    }
-}
-
-@keyframes animUI {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-50px);
-  }
-}
-
 a {
   color: #ffffff;
   font-weight: bold;
